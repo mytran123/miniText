@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="numberA"><input id="numberA"</label>
+<label for="numberB"><input id="numberB"</label>
+<input type="button" onclick="display()" value="ClickMe">
+<p id="result"></p>
+<script>
+  //Nhập vào a và b, tính tổng các số từ a đến b
+  function display() {
+      let numberA = document.getElementById("numberA").value;
+      let numberB = document.getElementById("numberB").value;
+      let result;
+      if (numberB > numberA) {
+          result = ((numberB - numberA + 1) /2) * (numberA + numberB);
+      } else {
+          result = ((numberA - numberB + 1) /2) * (numberA + numberB);
+      }
+      document.getElementById("result").innerText = "Tổng các số là: " + result
+  }
+
+</script>
+
+</body>
+</html>
