@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <label for="numberA"><input id="numberA"></label>
+    <label for="numberB"><input id="numberB"></label>
+    <input type="button" onclick="display()" value="ClickMe">
+    <p id="result"></p>
+<script>
+        function display() {
+            let numberA = document.getElementById("numberA").value;
+            let numberB = document.getElementById("numberB").value;
+            let square = numberA ** 2;
+            let result = numberA ** numberB;
+            document.getElementById("result").innerText = "Bình phương số A là: " + square + "; số A mũ số B là: " + result
+        }
+</script>
+
+
 </body>
 </html>
